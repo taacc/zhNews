@@ -1,0 +1,25 @@
+@import '../../../common/css/index.scss';
+.news{
+    padding: 0 .24rem;
+    h3{
+        font-size: .4rem;
+        line-height: .8rem; 
+        margin-bottom: .3rem;
+    }
+    li{
+        display: flex;
+        padding: .4rem;
+        margin: .24rem 0;
+        background: #fff;
+        border-radius: 5px;
+        @include shadow();
+        img{
+            width : 2.4rem;
+            margin-left : .24rem;
+        }
+        h4{
+            flex :1;
+            font-size: .5rem;
+        }
+    }
+}

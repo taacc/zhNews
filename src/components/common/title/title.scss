@@ -1,0 +1,105 @@
+@import '../../../common/css/index';
+
+.page-title{
+    position: fixed;
+    z-index: 30;
+    box-sizing: border-box;
+    width : 100%;
+    top : 0;
+    left : 0;
+    height : 1.7rem;
+    line-height: 1.65rem;
+    color :#fff;
+    background : $primary-color;
+    font-size: .5rem;
+    box-shadow: 1px 1px 10px rgb(167, 164, 164);
+    @include comm-padd;
+    i{
+        display: inline-block;
+        margin: 0 .3rem;
+        font-size: .5rem;
+    }
+    span{
+        padding-left : 5px;
+    }
+    h3{
+        display: inline-block;
+        color :#fff;
+    }
+    .left-icon{
+        float: left;
+        margin-right: 1rem;
+    }
+    .right-icon{
+        float : right;
+    
+    }
+}
+.page-title .isCollect{
+    color: yellow
+}
+// 侧边栏
+ .side-bar{
+     position: fixed;
+     display: flex;
+     font-size: .3.5rem;
+     width : 100vw;
+     height : 100vh;
+     left: -100vw;
+     top: 0;
+     touch-action: none;
+     background: rgba(0, 0, 0, 0.5);
+     img{
+         float: left;
+         width : 1.5rem;
+         height : 1.5rem;
+         border-radius: 50%;
+         margin-right: .4rem;
+     }
+     h4{
+        color: #fff;
+     }
+     p{
+         margin-top: .4rem;
+         line-height: .6rem;
+         font-size: .3rem;
+         span{
+             padding: 0;
+         }
+     }
+     .side-list{
+         width: 70%;
+         background: #ffffff;
+     }
+     .user-ifm{
+         padding: .4rem;
+         background: #00a2ed;
+     }
+ }
+ .side-nav{
+     color: #000;
+     a{
+        display: block;
+        padding: .4rem;
+        line-height: 1rem;
+        color: #000;
+     }
+ }
+ .side-nav .select{
+     color: #00a2ed;
+     background: #f0f0f0;
+ }
+ .show{
+     left: 0vw;
+     .side-list{
+         margin-left: -100vw;
+         animation: left .4s linear forwards
+     }
+ }
+ @keyframes left{
+     0%{
+        margin-left: -100vw;
+     }100%{
+        margin: 0
+     }
+ }

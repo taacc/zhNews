@@ -1,0 +1,52 @@
+@import '../../../common/css/index';
+.comment{
+    background: #ffffff;
+    color: #000;
+    font-size: .3rem;
+    h3{
+        line-height: 1rem;
+        border-bottom: 1px solid #e5e5e5;
+        padding-left: .4rem
+    }
+}
+
+.not-data{
+    display: table-cell;
+    width: 100vw;
+    height: 14rem;
+    vertical-align: middle;
+    text-align: center;
+}
+.comment-list{
+        position: relative;
+        padding: .4rem;
+        border-bottom: 1px solid #e5e5e5;
+        .icon{
+            position: absolute;
+            left: .4rem;
+            top : .4rem;
+        }
+        .con-hero{
+            padding-left : 1.3rem;
+        }
+        h4{
+            font-weight: bold;
+            margin-top: .1rem;
+            margin-bottom: .3rem;
+        }
+        p{
+            line-height: .6rem;
+            word-break: break-all;
+            .comm-time{
+                color: #b4b4b4;
+                font-size: .2rem
+            }
+            .toggleBtn{
+                float: right
+            }
+        }
+        img{
+            border-radius: 50%;
+            width : 1rem;
+        }
+    }

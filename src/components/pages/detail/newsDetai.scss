@@ -1,0 +1,24 @@
+@import '../../../common/css/index';
+.detail .question{
+    padding: 0 .4rem!important
+}
+.headline .img-place-holder{
+    position: relative;
+    height : 2rem;
+    overflow: hidden;
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: translateY(-2rem)
+    }
+    @include place-title();
+    span{
+        position:absolute;
+        font-size: .24rem;
+        color :#c2c2c2;
+        bottom : .2rem;
+        right : .4rem;
+    }
+}

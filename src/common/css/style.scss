@@ -1,0 +1,46 @@
+@mixin comm-padd{
+    padding: 0 .4rem;
+}
+@mixin shadow{
+    box-shadow: 1px 1px 1px rgb(182, 177, 177);
+}
+@mixin place-title {
+    p{
+        position: absolute;
+        z-index: 20;
+        width: 100%;
+        font-size: .6rem;
+        color : #fff;
+        @include comm-padd();
+        bottom: .5rem;
+        left : 0;
+    }
+}
+.main{
+    box-sizing: border-box;
+    padding-top: 1.7rem;
+    // height : 100%;
+    background: $bg-color;
+}
+.top-stories{
+    position: relative;
+    height : 6.7rem;
+    overflow: hidden;
+    @include place-title();
+    img{
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        transform: translateY(-2rem)
+    }
+
+}
+
+.mask{
+    position: absolute;
+    top : 0;
+    z-index: 1;
+    width : 100%;
+    height: 100%;
+    background: linear-gradient(to top,rgba(0, 0, 0,0.2),rgba(0, 0, 0,0.1),rgba(0, 0, 0,0));
+}
