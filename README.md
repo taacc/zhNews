@@ -26,6 +26,12 @@
     "react-router-dom": "^5.0.1"
   }
 ```
+### 使用方法
+``` javascript
+    npm install
+    npm start 
+```
+
 ### 知乎接口跨域问题
 配置package.json
 ``` javascript

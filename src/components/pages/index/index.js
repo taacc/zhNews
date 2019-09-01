@@ -28,7 +28,11 @@ class index extends React.Component {
         this.end = ev.touches[0].clientX
     }
 
-
+    toDetail(ev, id, end) {
+        if (end == 0) {
+            this.props.history.push("/newsDetail/" + id)
+        }
+    }
     // 获取上一天stories
     getBeforeStories() {
         if (this.isload) {
@@ -128,7 +132,7 @@ class index extends React.Component {
                                 <div key={item.id} className="top-stories"
                                     onTouchMove={(ev) => this.move(ev)}
                                     onTouchStart={() => this.start()}
-                                    onTouchEnd={(ev) => this.toDetail(ev,item.id,this.end)}>
+                                    onTouchEnd={(ev) => this.toDetail(ev, item.id, this.end)}>
                                     <div className="mask"></div>
                                     <img src={item.image} />
                                     <p>{item.title}</p>
