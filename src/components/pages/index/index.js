@@ -84,7 +84,7 @@ class index extends React.Component {
                     // 请求上一天数据
                     this.getBeforeStories();
                 })
-
+                
                 // 回调里
                 window.onscroll = () => {
                     let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
@@ -119,7 +119,9 @@ class index extends React.Component {
     }
     componentWillUnmount() {
         window.onscroll = null
+        // 取消页面所有ajax请求
         this.source.cancel()
+
     }
     render() {
         return (

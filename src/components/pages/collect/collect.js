@@ -19,7 +19,7 @@ class Collect extends React.Component {
     render() {
         return (
             <div>
-                <Title {...this.props} title={`共${this.state.stories.length}条收藏`}></Title>
+                <Title {...this.props} title={`共${this.state.stories.length}条收藏`} isIndex={true}></Title>
                 <div className="news collect">
                     {this.state.stories.length!=0?<Item stories={this.state.stories} props={this.props}></Item> : '暂无收藏'}
                 </div>

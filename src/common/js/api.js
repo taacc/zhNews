@@ -1,7 +1,7 @@
-// let basiUrl = 'https://news-at.zhihu.com/api/4'
+let basiUrl = 'https://news-at.zhihu.com/api/4'
 // basiUrl = ''
 // 接口
-const news = '/news'
+const news = basiUrl+'/news'
 // 最新消息
 const latest = news+'/latest'
 // 消息内容获取与离线下载
@@ -10,7 +10,7 @@ const latest = news+'/latest'
 const before = news+'/before/'
 
 // 新闻额外消息 #号跟id
-const storyExttra ='/story-extra/'
+const storyExttra =basiUrl+'/story-extra/'
 
 // 长评论
 function longComments(id){

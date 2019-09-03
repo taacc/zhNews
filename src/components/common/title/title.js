@@ -90,7 +90,7 @@ class Title extends React.Component {
                             <img src={userIcon} alt="" />
                             <h4>tacc</h4>
                             <p>
-                                <span onTouchEnd={()=>this.toCollect()}><i className="iconfont icon-shoucang1"></i>我的收藏</span>
+                                <span onTouchEnd={()=>this.toCollect()}><i className="iconfont icon-shoucang"></i>我的收藏</span>
                                 <span style={{ "float": "right", "paddingRight": "1rem" }}><i className="iconfont icon-icon-"></i>离线下载</span>
                             </p>
                         </div>
